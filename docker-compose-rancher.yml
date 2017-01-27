@@ -1,0 +1,13 @@
+firedrill:
+  image: srflaxu40/firedrill:latest
+  environment:
+    - SLACK_CHANNEL=${SLACK_CHANNEL}
+    - WEBHOOK_URL=${WEBHOOK_URL}
+    - ALERT_TIME=${ALERT_TIME}
+    - RANCHER_URL=${RANCHER_BASE_URL}
+    - RANCHER_ACCESS_KEY=${RANCHER_ACCESS_KEY}
+    - RANCHER_SECRET_KEY=${RANCHER_SECRET_KEY}
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.start_once: 'true'
+    io.rancher.stack.name: "srflaxu40/firedrill:latest"
