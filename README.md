@@ -1,4 +1,4 @@
-# rancher-alarms
+# rancher-firedrill
 
 ## Set the following environment variables:
 
